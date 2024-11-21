@@ -40,6 +40,13 @@ Default : 1
   box-sizing: border-box;
 }
 
+html {
+  /* Adjusting the rem unit : 1rem = 10px*/
+  /*font-size: 10px; : AVOID USING FIXED VALUES*/
+  /*Percentage of user's browser font-size setting*/
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;

@@ -13,8 +13,8 @@ Default : 1
 
 --- 02 COLORS
 
-- Primary : #0466ab
-- Tints : #e6f0f7
+- Primary :#2c5f2d
+- Tints : :#eaefea
 - Shades : 
 - Accents : 
 - Greys :
@@ -55,19 +55,9 @@ body {
   color: #555;
 }
 
-.section-hero {
-  background-color: #e6f0f7;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  gap: 9.6rem;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
+/**********************************/
+/* GENERAL REUSABLE COMPONENETS */
+/**********************************/
 
 .heading-primary {
   font-size: 5.2rem;
@@ -76,12 +66,6 @@ body {
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -98,13 +82,13 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #0466ab;
+  background-color: #2c5f2d;
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #045c9a;
+  background-color: #285629;
 }
 
 .btn--outline:link,
@@ -115,16 +99,55 @@ body {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #e6f0f7;
+  background-color: #eaefea;
   box-shadow: inset 0 0 0 3px #fff;
-}
-
-.hero-img {
-  width: 100%;
 }
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+/**********************************/
+/* HEADER */
+/**********************************/
+.header {
+  background-color: #eaefea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.logo {
+  height: 8rem;
+}
+/**********************************/
+/* HERO SECTION */
+/**********************************/
+
+.section-hero {
+  background-color: #eaefea;
+  padding: 1.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 .satisfied-travelers {
@@ -143,7 +166,7 @@ body {
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid #e6f0f7;
+  border: 3px solid #eaefea;
 }
 
 .satisfied-imgs img:last-child {
@@ -156,6 +179,6 @@ body {
 }
 
 .satisfied-text span {
-  color: #045c9a;
+  color: #285629;
   font-weight: 700;
 }

@@ -94,10 +94,10 @@ Premium: $99/month
 
 [Include customer photos]
 
-“Travel Wizard made planning our honeymoon effortless. Every detail was taken care of, and the destinations were spot on!” (Emma Johnson)
+“Travel Wizard made planning our honeymoon effortless. Every detail was taken care of, and the destinations were spot on!” (Dave Bryson)
 “I’m amazed at how well the AI understood what I wanted. The trip to Patagonia was beyond my expectations!” (Michael Lee)
-“Travel Wizard is a lifesaver! I never have to worry about planning again. It’s like having a personal travel agent 24/7.” (Sophia Martinez)
-“We used Travel Wizard for a family trip, and it was perfect for everyone. The eco-friendly options were a great touch.” (Raj Patel)
+“Travel Wizard is a lifesaver! I never have to worry about planning again. It’s like having a personal travel agent 24/7.” (Denis Gordon)
+“We used Travel Wizard for a family trip, and it was perfect for everyone. The eco-friendly options were a great touch.” (Matt Montoya)
 
 ### Section with logos of featured publications [see images]
 

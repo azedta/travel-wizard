@@ -30,16 +30,24 @@
       <img class="logo" src="./img/logo.png" alt="Travel Wizard Logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 2</a></li>
-          <li><a class="main-nav-link" href="#">Section 3</a></li>
-          <li><a class="main-nav-link" href="#">Section 4</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+          <li><a class="main-nav-link" href="#section-how">How it works</a></li>
+          <li>
+            <a class="main-nav-link" href="#section-packages"
+              >Travel Packages</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#section-testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li><a class="main-nav-link" href="#section-pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="section-hero">
+      <section id="section-hero" class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
@@ -78,7 +86,7 @@
         </div>
       </section>
 
-      <section class="section-featured">
+      <section id="section-featured" class="section-featured">
         <div class="container">
           <h2 class="heading-featured-in">Featured In</h2>
           <div class="logos">
@@ -97,7 +105,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section id="section-how" class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -161,7 +169,8 @@
           </div>
         </div>
       </section>
-      <section class="section-packages">
+
+      <section id="section-packages" class="section-packages">
         <div class="container center-text">
           <span class="subheading">Travel Packages</span>
           <h2 class="heading-secondary">
@@ -271,7 +280,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section id="section-testimonials" class="section-testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -408,7 +417,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section id="section-pricing" class="section-pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">Traveling without breaking the bank</h2>
@@ -574,5 +583,81 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#">
+            <img
+              class="footer-logo"
+              src="./img/logo.png"
+              alt="Home Buddy Logo"
+            />
+          </a>
+
+          <ul class="social-links footer-link">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2027 by Travel Wizard, Inc. All rights reserved
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              101 Innovation Blvd., 3rd Floor, Ottawa, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-555-9876">415-555-9876</a>
+              <br />
+              <a class="footer-link" href="mailto:support@travelwizard.com"
+                >support@travelwizard.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create Account</a></li>
+            <li><a class="footer-link" href="#">Sign In</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Travel Wizzard</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Tech partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Travel Directory</a></li>
+            <li><a class="footer-link" href="#">Privacy & Terms</a></li>
+            <li><a class="footer-link" href="#">Help Center</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

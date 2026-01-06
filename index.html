@@ -26,6 +26,7 @@
     <title>Travel Wizard</title>
   </head>
   <body>
+    <a class="skip-link" href="#section-hero">Skip to content</a>
     <header class="header">
       <img class="logo" src="./img/logo.png" alt="Travel Wizard Logo" />
       <nav class="main-nav">
@@ -45,6 +46,11 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+<button class="btn-mobile-nav" aria-label="Toggle navigation">
+  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+</button>
     </header>
     <main>
       <section id="section-hero" class="section-hero">
@@ -64,12 +70,12 @@
             <a href="#" class="btn btn--outline">Learn More &darr;</a>
             <div class="satisfied-travelers">
               <div class="satisfied-imgs">
-                <img src="./img/customers/customer-1.jpg" alt="customer phto" />
-                <img src="./img/customers/customer-2.jpg" alt="customer phto" />
-                <img src="./img/customers/customer-3.jpg" alt="customer phto" />
-                <img src="./img/customers/customer-4.jpg" alt="customer phto" />
-                <img src="./img/customers/customer-5.jpg" alt="customer phto" />
-                <img src="./img/customers/customer-6.jpg" alt="customer phto" />
+                <img src="./img/customers/customer-1.jpg" alt="customer photo" />
+                <img src="./img/customers/customer-2.jpg" alt="customer photo" />
+                <img src="./img/customers/customer-3.jpg" alt="customer photo" />
+                <img src="./img/customers/customer-4.jpg" alt="customer photo" />
+                <img src="./img/customers/customer-5.jpg" alt="customer photo" />
+                <img src="./img/customers/customer-6.jpg" alt="customer photo" />
               </div>
               <p class="satisfied-text">
                 Over <span>1,000,000+</span> satisfied travelers last year!
@@ -345,73 +351,73 @@
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-1.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-2.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-3.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-4.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-5.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-6.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-7.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-8.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-9.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-10.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-11.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
           <figure class="gallery-item">
             <img
               src="img/gallery/gallery-12.jpg"
-              alt="Photo of amazing travael memories"
+              alt="Photo of amazing travel memories"
             />
           </figure>
         </div>
@@ -428,7 +434,12 @@
               <p class="plan-name">Basic</p>
               <p class="plan-price"><span>$</span>49</p>
               <p class="plan-text">per month. Don't miss this deal.</p>
-            </header>
+        
+<button class="btn-mobile-nav" aria-label="Toggle navigation">
+  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+</button>
+    </header>
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
@@ -590,7 +601,7 @@
             <img
               class="footer-logo"
               src="./img/logo.png"
-              alt="Home Buddy Logo"
+              alt="Travel Wizard Logo"
             />
           </a>
 
@@ -643,7 +654,7 @@
         <nav class="nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About Travel Wizzard</a></li>
+            <li><a class="footer-link" href="#">About Travel Wizard</a></li>
             <li><a class="footer-link" href="#">For Business</a></li>
             <li><a class="footer-link" href="#">Tech partners</a></li>
             <li><a class="footer-link" href="#">Careers</a></li>
@@ -659,5 +670,32 @@
         </nav>
       </div>
     </footer>
+
+<script>
+  (function () {
+    const header = document.querySelector(".header");
+    const btn = document.querySelector(".btn-mobile-nav");
+    const nav = document.querySelector(".main-nav");
+    if (!header || !btn || !nav) return;
+
+    const closeNav = () => header.classList.remove("nav-open");
+
+    btn.addEventListener("click", () => {
+      header.classList.toggle("nav-open");
+    });
+
+    nav.addEventListener("click", (e) => {
+      const link = e.target.closest("a");
+      if (!link) return;
+      // close mobile drawer after selecting a link
+      closeNav();
+    });
+
+    // close on ESC
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeNav();
+    });
+  })();
+</script>
   </body>
 </html>

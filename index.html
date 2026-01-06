@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%27%20stop-color%3D%27%231f5a2d%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%271%27%20stop-color%3D%27%2334d399%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20x%3D%276%27%20y%3D%276%27%20width%3D%2752%27%20height%3D%2752%27%20rx%3D%2714%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cpath%20d%3D%27M20%2026c7-10%2017-10%2024%200%27%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C.85%29%27%20stroke-width%3D%274%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20text-anchor%3D%27middle%27%20font-family%3D%27ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2CRoboto%2CArial%27%20font-size%3D%2722%27%20font-weight%3D%27800%27%20fill%3D%27white%27%3ETW%3C/text%3E%0A%3C/svg%3E" />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,10 +49,10 @@
         </ul>
       </nav>
 
-<button class="btn-mobile-nav" aria-label="Toggle navigation">
-  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-</button>
+      <button class="btn-mobile-nav" aria-label="Toggle navigation">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section id="section-hero" class="section-hero">
@@ -70,12 +72,30 @@
             <a href="#" class="btn btn--outline">Learn More &darr;</a>
             <div class="satisfied-travelers">
               <div class="satisfied-imgs">
-                <img src="./img/customers/customer-1.jpg" alt="customer photo" />
-                <img src="./img/customers/customer-2.jpg" alt="customer photo" />
-                <img src="./img/customers/customer-3.jpg" alt="customer photo" />
-                <img src="./img/customers/customer-4.jpg" alt="customer photo" />
-                <img src="./img/customers/customer-5.jpg" alt="customer photo" />
-                <img src="./img/customers/customer-6.jpg" alt="customer photo" />
+                <img
+                  src="./img/customers/customer-1.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./img/customers/customer-2.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./img/customers/customer-3.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./img/customers/customer-4.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./img/customers/customer-5.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./img/customers/customer-6.jpg"
+                  alt="customer photo"
+                />
               </div>
               <p class="satisfied-text">
                 Over <span>1,000,000+</span> satisfied travelers last year!
@@ -434,12 +454,18 @@
               <p class="plan-name">Basic</p>
               <p class="plan-price"><span>$</span>49</p>
               <p class="plan-text">per month. Don't miss this deal.</p>
-        
-<button class="btn-mobile-nav" aria-label="Toggle navigation">
-  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-</button>
-    </header>
+
+              <button class="btn-mobile-nav" aria-label="Toggle navigation">
+                <ion-icon
+                  class="icon-mobile-nav"
+                  name="menu-outline"
+                ></ion-icon>
+                <ion-icon
+                  class="icon-mobile-nav"
+                  name="close-outline"
+                ></ion-icon>
+              </button>
+            </header>
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
@@ -671,31 +697,31 @@
       </div>
     </footer>
 
-<script>
-  (function () {
-    const header = document.querySelector(".header");
-    const btn = document.querySelector(".btn-mobile-nav");
-    const nav = document.querySelector(".main-nav");
-    if (!header || !btn || !nav) return;
+    <script>
+      (function () {
+        const header = document.querySelector(".header");
+        const btn = document.querySelector(".btn-mobile-nav");
+        const nav = document.querySelector(".main-nav");
+        if (!header || !btn || !nav) return;
 
-    const closeNav = () => header.classList.remove("nav-open");
+        const closeNav = () => header.classList.remove("nav-open");
 
-    btn.addEventListener("click", () => {
-      header.classList.toggle("nav-open");
-    });
+        btn.addEventListener("click", () => {
+          header.classList.toggle("nav-open");
+        });
 
-    nav.addEventListener("click", (e) => {
-      const link = e.target.closest("a");
-      if (!link) return;
-      // close mobile drawer after selecting a link
-      closeNav();
-    });
+        nav.addEventListener("click", (e) => {
+          const link = e.target.closest("a");
+          if (!link) return;
+          // close mobile drawer after selecting a link
+          closeNav();
+        });
 
-    // close on ESC
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeNav();
-    });
-  })();
-</script>
+        // close on ESC
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeNav();
+        });
+      })();
+    </script>
   </body>
 </html>
